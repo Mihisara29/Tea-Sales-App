@@ -8,7 +8,7 @@ export default function TabsLayout() {
   const { user, loading } = useContext(AuthContext);
 
   if (loading) return <Text>Loading...</Text>;
-  if (!user) return <Redirect href="/login" />;
+  if (!user) return <Redirect href="/auth" />;
 
   return (
     <Tabs screenOptions={{ tabBarActiveTintColor: '#3498db' }}>
